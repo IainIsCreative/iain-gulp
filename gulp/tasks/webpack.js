@@ -8,6 +8,14 @@ import webpackProductionConfig from '../../webpack/webpack.config.production';
 import paths from '../config/paths';
 import env from '../config/env';
 
+/**
+ *
+ * Webpack Task
+ *
+ * Take the JS entry point and all imported files through webpack to compile
+ * into a single bundle file.
+ *
+ */
 gulp.task('webpack', ['compile'], () =>
   gulp.src(paths.js.entryPoint)
     .pipe(webpack(env === 'production' ? webpackProductionConfig : webpackConfig))

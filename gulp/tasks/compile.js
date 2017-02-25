@@ -4,6 +4,13 @@ import del from 'del';
 
 import paths from '../config/paths';
 
+/**
+ *
+ * Clean JS Task
+ *
+ * Every time the JS needs compilation, destroy the previously created JS files.
+ *
+ */
 gulp.task('clean-js', () => del([
   paths.js.bundle,
   paths.js.bundleMin,

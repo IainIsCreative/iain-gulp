@@ -14,16 +14,15 @@ import paths from '../config/paths';
 import env from '../config/env';
 import browserList from '../config/browsers';
 
-let removeComments;
-let nanoCore = true;
+let removeComments = false;
+let nanoCore = false;
 
+// Change variables for PostCSS settings if the env is set to production
 if (env === 'production') {
+  nanoCore = true;
   removeComments = {
     removeAll: true,
   };
-} else {
-  nanoCore = false;
-  removeComments = false;
 }
 
 /**

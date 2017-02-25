@@ -1,3 +1,13 @@
+/**
+ *
+ * Paths configuration
+ *
+ * All paths for source files, entry points, outputs, and tasks are here.
+ * Stored in a JS Object with each file type's path stored in a key containing
+ * keys for separate paths.
+ *
+ */
+
 const paths = {
 
   js: {
