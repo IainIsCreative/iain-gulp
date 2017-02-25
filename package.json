@@ -1,31 +1,54 @@
 {
   "name": "iain-gulp",
-  "version": "0.0.0",
-  "description": "A setup of all the gulp plugins necessary for all projects",
+  "version": "1.0.0",
+  "description": "A build stack for all of my projects",
   "repository": {
     "type": "git",
     "url": "git://github.com/iainspad/iain-gulp.git"
   },
-  "keywords": [
-    "gulp",
-    "plugins",
-    "task running"
-  ],
   "author": "Iain",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/iainspad/iain-gulp/issues"
   },
+  "keywords": [
+    "gulp",
+    "plugins",
+    "webpack",
+    "js stack"
+  ],
+  "scripts": {
+    "start": "gulp",
+    "production": "NODE_ENV=production gulp"
+  },
   "homepage": "https://github.com/iainspad/iain-gulp",
+  "dependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "cssnano": "^3.10.0",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-eslint": "^3.0.1",
+    "gulp-flowtype": "^1.0.0",
+    "gulp-notify": "^3.0.0",
+    "gulp-postcss": "^6.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sass-lint": "^1.3.2",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-util": "^3.0.8",
+    "postcss-cssnext": "^2.9.0",
+    "require-dir": "^0.3.1",
+    "webpack": "^2.2.1",
+    "webpack-stream": "^3.2.0"
+  },
   "devDependencies": {
-    "debowerify": "^1.2.1",
-    "gulp": "^3.8.11",
-    "gulp-autoprefixer": "^2.1.0",
-    "gulp-browserify": "^0.5.1",
-    "gulp-load-plugins": "^0.10.0",
-    "gulp-notify": "^2.2.0",
-    "gulp-sass": "^1.3.3",
-    "gulp-watch": "^4.2.4",
-    "require-dir": "^0.3.0"
+    "babel-eslint": "^7.1.1",
+    "babel-preset-latest": "^6.22.0",
+    "eslint-config-airbnb-base": "^11.1.0",
+    "eslint-plugin-flowtype": "^2.30.0",
+    "eslint-plugin-import": "^2.2.0",
+    "gulp-sass-lint": "^1.3.2"
   }
 }

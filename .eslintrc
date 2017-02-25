@@ -1,0 +1,16 @@
+{
+  "extends": [
+    "airbnb-base",
+    "plugin:flowtype/recommended"
+  ],
+  "plugins": [
+    "import",
+    "flowtype"
+  ],
+  "rules": {
+    "new-cap": [
+      2
+    ]
+  },
+  "parser": "babel-eslint"
+}
